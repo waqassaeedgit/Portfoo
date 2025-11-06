@@ -1,4 +1,13 @@
 <style>
+    
+    .tab-btn {
+    color: black;
+    border-radius: 10px;
+    padding: 10px !important;
+    border: 1ps solid !important;
+    border: 1ps solid;
+    border: 1px solid #149ddd;
+}
 /**
 * Template Name: iPortfolio
 * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -877,7 +886,7 @@ section,
 	display: inline-block;
 	padding: 0;
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: 700;
 	margin: 0 10px;
 	line-height: 1;
 	text-transform: uppercase;
@@ -887,7 +896,8 @@ section,
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
-	color: var(--accent-color);
+	background-color: var(--accent-color);
+    color: #f4fafd;
 }
 
 .portfolio .portfolio-filters li:first-child {
@@ -1370,6 +1380,12 @@ section,
 .starter-section {
 	/* Add your styles here */
 }
+/* media query */
+@media (max-width: 768px) {
+.portfolio .portfolio-filters li {
+    margin-bottom: 16.5px !important;
+}
+}
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -1658,13 +1674,13 @@ section,
 			<div class="container">
 				<div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 					<ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-						<li data-filter="*" class="filter-active">All</li>
-						<li data-filter=".filter-app"><mark>Web Development</mark></li>
-						<li data-filter=".filter-product">Product Labeling/Candle Label</li>
-						<li data-filter=".filter-graffiti">Graffiti Style</li>
+						<li data-filter="*" class="filter-active tab-btn">All</li>
+						<li data-filter=".filter-app" class="tab-btn">Web Development</li>
+						<li data-filter=".filter-product" class="tab-btn">Product Labeling/Candle Label</li>
+						<li data-filter=".filter-graffiti" class="tab-btn">Graffiti Style</li>
 						<!-- Added Graffiti filter -->
-						<li data-filter=".filter-font">Font</li>
-						<li data-filter=".filter-banners">Banners</li>
+						<li data-filter=".filter-font" class="tab-btn">Font</li>
+						<li data-filter=".filter-banners" class="tab-btn">Banners</li>
 						<!-- Added Banners filter -->
 					</ul>
 					<!-- End Portfolio Filters -->
@@ -1718,6 +1734,22 @@ section,
 								<div class="portfolio-info">
 									<h4>WEBSITE 7</h4>
 									<p>Web Development & customization</p> <a href="assets/img/portfolio/website7.jpg" title="WEBSITE 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> <a href="https://famiukbeauty.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> </div>
+							</div>
+						</div>
+						   <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+							<div class="portfolio-content h-100"> <img src="assets/img/portfolio/website8.jpg" class="img-fluid" alt="" />
+								<div class="portfolio-info">
+									<h4>WEBSITE 8</h4>
+									<p>Web Development & customization</p> <a href="assets/img/portfolio/website8.jpg" title="WEBSITE 8" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> <a href="https://famiukbeauty.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> 
+								</div>
+							</div>
+						</div>
+						 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+							<div class="portfolio-content h-100"> <img src="assets/img/portfolio/website9.jpg" class="img-fluid" alt="" />
+								<div class="portfolio-info">
+									<h4>WEBSITE 9</h4>
+									<p>Web Development & customization</p> <a href="assets/img/portfolio/website9.jpg" title="WEBSITE 8" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> <a href="https://famiukbeauty.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> 
+								</div>
 							</div>
 						</div>
 						<!-- End Portfolio Item -->
@@ -1860,6 +1892,52 @@ section,
 										<p>Lorem ipsum, dolor sit amet consectetur</p> <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> </div>
 								</div>
 							</div>
+                             <!-- Portfolio Item for Banners -->
+           
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-banners">
+                <div class="portfolio-content h-100">
+                    <img src="assets/img/portfolio/banner/banner1.jpg" class="img-fluid" alt="Banner1" />
+                    <div class="portfolio-info">
+                        <h4>Banner 1</h4>
+                        <p>Banner Design</p>
+                        <a href="assets/img/portfolio/banner/banner1.jpg" title="Banner 1" data-gallery="portfolio-gallery-banner" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                </div>
+            </div>
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-banners">
+                <div class="portfolio-content h-100">
+                    <img src="assets/img/portfolio/banner/banner2.jpg" class="img-fluid" alt="Banner1" />
+                    <div class="portfolio-info">
+                        <h4>Banner 2</h4>
+                        <p>Banner Design</p>
+                        <a href="assets/img/portfolio/banner/banner2.jpg" title="Banner 1" data-gallery="portfolio-gallery-banner" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                </div>
+            </div>
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-banners">
+                <div class="portfolio-content h-100">
+                    <img src="assets/img/portfolio/banner/banner3.jpg" class="img-fluid" alt="Banner1" />
+                    <div class="portfolio-info">
+                        <h4>Banner 3</h4>
+                        <p>Banner Design</p>
+                        <a href="assets/img/portfolio/banner/banner3.jpg" title="Banner 1" data-gallery="portfolio-gallery-banner" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                </div>
+            </div>
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-banners">
+                <div class="portfolio-content h-100">
+                    <img src="assets/img/portfolio/banner/banner4.jpg" class="img-fluid" alt="Banner1" />
+                    <div class="portfolio-info">
+                        <h4>Banner 4</h4>
+                        <p>Banner Design</p>
+                        <a href="assets/img/portfolio/banner/banner4.jpg" title="Banner 1" data-gallery="portfolio-gallery-banner" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                </div>
+            </div>
 							<!-- End Portfolio Item -->
 							<!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
