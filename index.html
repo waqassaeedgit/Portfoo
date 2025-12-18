@@ -1645,7 +1645,7 @@ section,
 						</div>
 						<!-- Edn Resume Item -->
 					</div>
-					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">git 
+					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
 						<h3 class="resume-title">Professional Experience</h3>
 						<div class="resume-item">
 							<h4>Php Magento Developer</h4>
@@ -2026,7 +2026,7 @@ section,
 					<div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
 						<div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
 						<div>
-							<h4 class="title"><a href="https://wa.me/03418861941" class="stretched-link">Web Development</a></h4>
+							<h4 class="title"><a href="service-details.html">Web Development</a></h4>
 							<p class="description"> Proficient in designing, developing, and maintaining responsive websites and web applications using HTML, CSS, JavaScript,PHP and modern frameworks like Vuejs . Skilled in creating user-friendly interfaces, optimizing performance, and implementing backend logic. Familiar with version control (Git), RESTful APIs, and deployment processes to deliver functional and scalable web solutions. </p>
 						</div>
 					</div>
@@ -2196,31 +2196,40 @@ section,
 							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d212645.32758412763!2d73.08610799999998!3d33.61611625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1745503422035!5m2!1sen!2s" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
-					<div class="col-lg-7">
-						<form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-							<div class="row gy-4">
-								<div class="col-md-6">
-									<label for="name-field" class="pb-2">Your Name</label>
-									<input type="text" name="name" id="name-field" class="form-control" required="" /> </div>
-								<div class="col-md-6">
-									<label for="email-field" class="pb-2">Your Email</label>
-									<input type="email" class="form-control" name="email" id="email-field" required="" /> </div>
-								<div class="col-md-12">
-									<label for="subject-field" class="pb-2">Subject</label>
-									<input type="text" class="form-control" name="subject" id="subject-field" required="" /> </div>
-								<div class="col-md-12">
-									<label for="message-field" class="pb-2">Message</label>
-									<textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-								</div>
-								<div class="col-md-12 text-center">
-									<div class="loading">Loading</div>
-									<div class="error-message"></div>
-									<div class="sent-message">Your message has been sent. Thank you!</div>
-									<button type="submit">Send Message</button>
-								</div>
-							</div>
-						</form>
-					</div>
+<div class="col-lg-7">
+  <form action="https://formspree.io/f/mbdrrbjz" method="POST">
+    <div class="row gy-4">
+
+      <div class="col-md-6">
+        <label class="pb-2">Your Name</label>
+        <input type="text" name="name" class="form-control" required>
+      </div>
+
+      <div class="col-md-6">
+        <label class="pb-2">Your Email</label>
+        <input type="email" name="email" class="form-control" required>
+      </div>
+
+      <div class="col-md-12">
+        <label class="pb-2">Subject</label>
+        <input type="text" name="subject" class="form-control" required>
+      </div>
+
+      <div class="col-md-12">
+        <label class="pb-2">Message</label>
+        <textarea name="message" rows="10" class="form-control" required></textarea>
+      </div>
+
+      <input type="hidden" name="_captcha" value="false">
+
+      <div class="col-md-12 text-center">
+        <button type="submit">Send Message</button>
+      </div>
+
+    </div>
+  </form>
+</div>
+
 					<!-- End Contact Form -->
 				</div>
 			</div>
